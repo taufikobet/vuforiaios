@@ -12,7 +12,6 @@ Pod::Spec.new do |s|
   
   s.frameworks = 'AVFoundation', 'CoreVideo', 'CoreMedia', 'QuartzCore', 'OpenGLES', 'CoreMotion', 'MediaPlayer', 'AudioToolbox', 'SystemConfiguration', 'CoreText'
 
-  s.xcconfig  =  { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/VuforiaSDK/vuforiasdk268/build/lib/arm"',
-                   'HEADER_SEARCH_PATHS' => '"$(PODS_ROOT)/VuforiaSDK/vuforiasdk268/build/include"' }
+  s.xcconfig  =  { 'HEADER_SEARCH_PATHS' => '"$(PODS_ROOT)/VuforiaSDK/vuforiasdk268/build/include"' }
 end
   
