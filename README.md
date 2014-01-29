@@ -7,7 +7,7 @@ Vuforia iOS SDK
 2. Enter this:
 
 ```
-   platform :ios
+platform :ios
    
-   pod 'VuforiaSDK', :git => 'git@github.com:taufikobet/vuforiaios.git'
+pod 'VuforiaSDK', :git => 'git@github.com:taufikobet/vuforiaios.git'
 ```
