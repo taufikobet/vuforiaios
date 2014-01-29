@@ -7,14 +7,14 @@ Pod::Spec.new do |s|
   s.platform     = :ios
 
   # todo: maintain QCAR folder on Pods
-  s.source_files =  'build/include/QCAR/*.h'
-  s.vendored_library = 'libQCAR.a'
-  s.preserve_paths = 'libQCAR.a'
-  s.libraries = 'QCAR'
+  s.source_files =  'vuforia/build/include/QCAR/*.h'
+  s.vendored_library = 'vuforia/libQCAR.a'
+  s.preserve_paths = 'vuforia'
+  s.libraries = 'lQCAR'
   s.header_dir = 'QCAR'
 
   s.frameworks = 'AVFoundation', 'CoreVideo', 'CoreMedia', 'QuartzCore', 'OpenGLES', 'CoreMotion', 'MediaPlayer', 'AudioToolbox', 'SystemConfiguration', 'CoreText'
 
-  s.xcconfig  =  { 'HEADER_SEARCH_PATHS' => '"$(PODS_ROOT)/VuforiaSDK/vuforiasdk268/build/include"' }
+  s.xcconfig  =  { 'HEADER_SEARCH_PATHS' => '"$(PODS_ROOT)/VuforiaSDK/build/include"' }
 end
   
