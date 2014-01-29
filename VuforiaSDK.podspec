@@ -3,11 +3,11 @@ Pod::Spec.new do |s|
   s.version      = "2.6.8"
   s.summary      = "Vuforia SDK"
   
-  s.source       = { :http => 'https://github.com/taufikobet/vuforiaios/raw/master/vuforiasdk268.zip', :flatten => true }
+  s.source       = { :http => 'https://github.com/taufikobet/vuforiaios/raw/master/vuforiasdk268.zip' }
   s.platform     = :ios
 
   # todo: maintain QCAR folder on Pods
-  s.source_files = 'build/include/QCAR/*.h'
+  s.source_files =  'build/include/QCAR/*.h'
   s.vendored_library = 'libQCAR.a'
   s.preserve_paths = 'libQCAR.a'
   s.libraries = 'QCAR'
