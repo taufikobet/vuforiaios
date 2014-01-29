@@ -8,13 +8,14 @@ Pod::Spec.new do |s|
 
   # todo: maintain QCAR folder on Pods
   s.source_files = 'vuforiasdk268/header/QCAR/*.h'
-  s.vendored_library = 'vuforiasdk268/staticlib/libQCAR.a'
-  s.preserve_paths = 'vuforiasdk268/staticlib/*'
-  s.libraries = 'QCAR'
   s.header_dir = 'QCAR'
+  s.preserve_paths = 'vuforiasdk268/staticlib/libQCAR.a'
+  s.libraries = 'QCAR'
 
   s.frameworks = 'AVFoundation', 'CoreVideo', 'CoreMedia', 'QuartzCore', 'OpenGLES', 'CoreMotion', 'MediaPlayer', 'AudioToolbox', 'SystemConfiguration', 'CoreText'
 
-  s.xcconfig  =  { 'HEADER_SEARCH_PATHS' => '"$(PODS_ROOT)/VuforiaSDK/vuforiasdk268/header"' }
+  s.xcconfig  =  { 'HEADER_SEARCH_PATHS' => '"${PODS_ROOT}/VuforiaSDK/vuforiasdk268/header"',
+                   'LIBRARY_SEARCH_PATHS' => '"${PODS_ROOT}/VuforiaSDK/vuforiasdk268/staticlib"'
+                 }
 end
   
