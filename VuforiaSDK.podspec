@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name         = "Vuforia SDK"
+  s.name         = "VuforiaSDK"
   s.version      = "2.6.8"
   s.summary      = "Vuforia SDK"
   
