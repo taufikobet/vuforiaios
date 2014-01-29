@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.source_files = 'vuforiasdk268/build/include/QCAR/*.h'
   s.vendored_library = 'vuforiasdk268/build/lib/arm/libQCAR.a'
   s.header_dir = 'QCAR'
-  
+  s.library = 'QCAR'
   s.frameworks = 'AVFoundation', 'CoreVideo', 'CoreMedia', 'QuartzCore', 'OpenGLES', 'CoreMotion', 'MediaPlayer', 'AudioToolbox', 'SystemConfiguration', 'CoreText'
 
   s.xcconfig  =  { 'HEADER_SEARCH_PATHS' => '"$(PODS_ROOT)/VuforiaSDK/vuforiasdk268/build/include"' }
