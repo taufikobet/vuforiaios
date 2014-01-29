@@ -9,6 +9,7 @@ Pod::Spec.new do |s|
   # todo: maintain QCAR folder on Pods
   s.source_files = 'vuforiasdk268/build/include/QCAR/*.h'
   s.vendored_library = 'vuforiasdk268/build/lib/arm/libQCAR.a'
+  s.header_dir = 'QCAR'
   
   s.frameworks = 'AVFoundation', 'CoreVideo', 'CoreMedia', 'QuartzCore', 'OpenGLES', 'CoreMotion', 'MediaPlayer', 'AudioToolbox', 'SystemConfiguration', 'CoreText'
 
